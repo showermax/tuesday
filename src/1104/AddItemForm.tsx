@@ -37,11 +37,12 @@ export function AddItemForm(props: AddItemFormPropsType) {
     }
     return <div>
 
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" size='small' value={title}
+        <TextField id="outlined-basic" label={error || 'Type the task'} variant="outlined" size='small' value={title}
                    onChange={onChangeHandler}
-                   onKeyDown={onKeyPressHandler}/>
+                   onKeyDown={onKeyPressHandler}
+        error={!!error}/>
         {/*<button onClick={addItem}>+</button>*/}
         <Button variant="contained" size="small" style={btnStyle} onClick={addItem}>+</Button>
-        {error && <div className="error-message">{error}</div>}
+        {/*{error && <div className="error-message">{error}</div>}*/}
     </div>
 }
