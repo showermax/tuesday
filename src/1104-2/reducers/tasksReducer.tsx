@@ -1,4 +1,4 @@
-import {TaskType} from "../Todolist";
+                import {TaskType} from "../Todolist";
 import {v1} from "uuid";
 
 export const TasksReducer=(state:TaskType[], action: TsarType)=>{
