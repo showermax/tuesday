@@ -1,10 +1,6 @@
 import React from 'react';
 import './index.css';
-// import App from './0404/App';
-// import App from './1104/App';
-// import App from './1104-2/App';
-// import App from './1804/App';
-import App from './2004 - nativeJs/App';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createRoot } from 'react-dom/client';
 
