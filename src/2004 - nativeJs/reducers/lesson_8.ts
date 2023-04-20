@@ -3,9 +3,12 @@
 
 export function sum(...nums: Array<number>): number {
     // console.log(nums)
+    return nums.reduce((s,el)=>s+el)
     //...здесь пишем код.
     // В return стоит "заглушка", чтоб typescript не ругался
-    return 123
+    // return 123
+    console.log(nums)
+    console.log(arguments)
 }
 
 
